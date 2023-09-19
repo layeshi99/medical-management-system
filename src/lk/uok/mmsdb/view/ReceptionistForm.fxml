@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="receptionistFormContext" prefHeight="635.0" prefWidth="1129.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uok.mmsdb.controller.ReceptionistFormController">
+   <children>
+      <ImageView fitHeight="635.0" fitWidth="1129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/receptionist.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="68.0" layoutY="59.0" onAction="#previousPageOnAction" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: #487eb0;" text="&lt;&lt; Previous Page" textFill="#f2efef">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="905.0" layoutY="59.0" onAction="#newReceptionistOnAction" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: #00a8ff;" text="+ New Receptionist" textFill="#f8f3f3">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtRecSearch" layoutX="280.0" layoutY="139.0" prefHeight="31.0" prefWidth="812.0" promptText=" Search Here ....." />
+      <TableView fx:id="tblReceptionist" layoutX="68.0" layoutY="206.0" prefHeight="331.0" prefWidth="1024.0">
+         <columns>
+            <TableColumn fx:id="colRecId" prefWidth="75.0" text="Receptionist ID" />
+            <TableColumn fx:id="colRecName" prefWidth="95.0" text="Full Name" />
+            <TableColumn fx:id="colRecGender" prefWidth="77.0" text="Gender" />
+            <TableColumn fx:id="colRecDutyHours" prefWidth="119.0" text="Duty Hours" />
+            <TableColumn fx:id="colRecMobile" prefWidth="130.0" text="Mobile Number" />
+            <TableColumn fx:id="colRecEmail" prefWidth="160.0" text="Email" />
+            <TableColumn fx:id="colRecAddress" prefWidth="99.0" text="Address" />
+            <TableColumn fx:id="colRecUsername" prefWidth="145.0" text="Username" />
+            <TableColumn fx:id="colRecPassword" prefWidth="123.0" text="Passward" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnLoadAll" layoutX="614.0" layoutY="59.0" onAction="#loadAllOnAction" style="-fx-background-color: #718093;" text="Load All Receptionists Details" textFill="#fcf5f5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="139.0" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: #487eb0;" text="Receptionist ID" textAlignment="CENTER" textFill="#fcf8f8">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnRecDelete" layoutX="718.0" layoutY="574.0" onAction="#recDeleteOnAction" prefHeight="38.0" prefWidth="111.0" style="-fx-background-color: #ff7675;" text="Delete" textFill="#fcf3f3">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnRecUpdate" layoutX="841.0" layoutY="574.0" onAction="#recUpdateOnAction" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #487eb0;" text="Update" textFill="#fcf3f3">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="989.0" layoutY="574.0" onAction="#cancelOnAction" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #487eb0;" text="Cancel" textFill="#fcf3f3">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

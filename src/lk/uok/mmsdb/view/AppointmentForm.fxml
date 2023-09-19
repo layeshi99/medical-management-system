@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="appointmentFormContext" prefHeight="635.0" prefWidth="1129.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uok.mmsdb.controller.AppointmentFormController">
+   <children>
+      <ImageView fitHeight="627.0" fitWidth="1294.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/Appointment.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="58.0" layoutY="49.0" onAction="#previousPageOnAction" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: #487eb0;" text="&lt;&lt; Previous Page" textFill="#f2efef">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtAppSearch" layoutX="270.0" layoutY="129.0" prefHeight="31.0" prefWidth="812.0" promptText=" Search Here ....." />
+      <TableView fx:id="tblAppointment" layoutX="58.0" layoutY="196.0" prefHeight="352.0" prefWidth="1024.0">
+         <columns>
+            <TableColumn fx:id="colAppId" prefWidth="137.0" text="Appointment ID" />
+            <TableColumn fx:id="colAppPatName" prefWidth="110.0" text="Patient Name" />
+            <TableColumn fx:id="colAppPatId" minWidth="0.0" prefWidth="87.0" text="Patient ID" />
+            <TableColumn fx:id="colAppDocName" prefWidth="110.0" text="Doctor Name" />
+            <TableColumn fx:id="colAppDocId" prefWidth="96.0" text="Doctor ID" />
+            <TableColumn fx:id="colAppDocCreated" prefWidth="127.0" text="Created Date" />
+            <TableColumn fx:id="colAppDate" prefWidth="140.0" text="Appointment Date" />
+            <TableColumn fx:id="colAppTime" prefWidth="110.0" text="Time" />
+            <TableColumn fx:id="colAppType" prefWidth="105.0" text="Type" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnLoadAll" layoutX="800.0" layoutY="41.0" onAction="#loadAllOnAction" style="-fx-background-color: #718093;" text="Load All Appointments Details" textFill="#fcf5f5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="129.0" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: #487eb0;" text="Appointment ID" textAlignment="CENTER" textFill="#fcf8f8">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

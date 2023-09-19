@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="patientFormContext" prefHeight="635.0" prefWidth="1129.0" style="-fx-background-color: #f5f6fa;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uok.mmsdb.controller.PatientFormController">
+   <children>
+      <ImageView fitHeight="635.0" fitWidth="1048.0" layoutX="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asserts/patient.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="68.0" layoutY="59.0" onAction="#previousPageOnAction" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: #487eb0;" text="&lt;&lt; Previous Page" textFill="#f2efef">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtPatSearch" layoutX="280.0" layoutY="139.0" prefHeight="31.0" prefWidth="812.0" promptText=" Search Here ....." />
+      <JFXButton fx:id="btnLoadAll" layoutX="810.0" layoutY="51.0" onAction="#loadAllOnAction" style="-fx-background-color: #718093;" text="Load All Patients Details" textFill="#fcf5f5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="68.0" layoutY="139.0" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: #487eb0;" text="Patient ID" textAlignment="CENTER" textFill="#fcf8f8">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblDoctor" layoutX="58.0" layoutY="196.0" prefHeight="352.0" prefWidth="1024.0">
+         <columns>
+            <TableColumn fx:id="colPatId" prefWidth="81.0" text="Patient ID" />
+            <TableColumn fx:id="colPatName" prefWidth="89.0" text="Full Name" />
+            <TableColumn fx:id="colPatGender" prefWidth="77.0" text="Gender" />
+            <TableColumn fx:id="colPatAge" prefWidth="52.0" text="Age" />
+            <TableColumn fx:id="colBlood" prefWidth="108.0" text="Blood Group" />
+            <TableColumn fx:id="colSymptoms" prefWidth="96.0" text="Symptoms" />
+            <TableColumn fx:id="colDoRecord" prefWidth="176.0" text="Doctor's Record" />
+            <TableColumn fx:id="colPatMobile" prefWidth="87.0" text="Mobile" />
+            <TableColumn fx:id="colPatEmail" prefWidth="91.0" text="Email" />
+            <TableColumn fx:id="colPatAddress" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="colPatColoumn" prefWidth="90.0" text="PatientCol" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

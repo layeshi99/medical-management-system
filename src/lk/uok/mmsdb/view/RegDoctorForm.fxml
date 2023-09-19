@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="regDoctorContext" prefHeight="635.0" prefWidth="1129.0" style="-fx-background-color: #74b9ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.uok.mmsdb.controller.RegDoctorFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="18.0" text=" Doctor Registration" textFill="#dddbdb">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="229.0" layoutY="34.0" prefHeight="9.0" prefWidth="886.0" />
+      <Label layoutX="64.0" layoutY="103.0" text="Doctor ID" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="149.0" text="Full Name" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="233.0" text="Specialization" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="191.0" text="Gender" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="277.0" text="Fee" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="63.0" layoutY="320.0" text=" Mobile Number" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="364.0" text="Email" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="407.0" text="Address" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="449.0" text="Username" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="496.0" text="Passward" textFill="#f8f4f4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="40.0" layoutY="571.0" onAction="#previousPageOnAction" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: #487eb0;" text="&lt;&lt; Previous Page" textFill="#f2efef">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnRegDoctor" layoutX="777.0" layoutY="561.0" onAction="#registerDoctorOnAction" prefHeight="31.0" prefWidth="189.0" style="-fx-background-color: #00a8ff;" text="Register" textFill="#f8f3f3">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Button layoutX="988.0" layoutY="562.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="37.0" prefWidth="115.0" style="-fx-background-color: #636e72;" text="Cancel" textFill="#f2ebeb">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtDocId" layoutX="267.0" layoutY="101.0" prefHeight="31.0" prefWidth="713.0" />
+      <TextField fx:id="txtDocName" layoutX="267.0" layoutY="145.0" prefHeight="31.0" prefWidth="713.0" />
+      <TextField fx:id="txtSpecialization" layoutX="267.0" layoutY="231.0" prefHeight="31.0" prefWidth="713.0" />
+      <TextField fx:id="txtDocGender" layoutX="267.0" layoutY="189.0" prefHeight="31.0" prefWidth="713.0" />
+      <TextField fx:id="txtDocFee" layoutX="267.0" layoutY="275.0" prefHeight="31.0" prefWidth="713.0" />
+      <TextField fx:id="txtDocMobile" layoutX="267.0" layoutY="318.0" prefHeight="31.0" prefWidth="713.0" />
+      <TextField fx:id="txtDocEmail" layoutX="267.0" layoutY="360.0" prefHeight="31.0" prefWidth="713.0" />
+      <TextField fx:id="txtDocAddress" layoutX="267.0" layoutY="405.0" prefHeight="31.0" prefWidth="713.0" />
+      <TextField fx:id="txtDocUsername" layoutX="267.0" layoutY="447.0" prefHeight="31.0" prefWidth="713.0" />
+      <TextField fx:id="txtDocPassword" layoutX="267.0" layoutY="494.0" prefHeight="31.0" prefWidth="713.0" />
+   </children>
+</AnchorPane>
